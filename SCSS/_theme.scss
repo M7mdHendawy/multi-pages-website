@@ -58,15 +58,19 @@ body {
     }
 }
 
-.ti-search {
-    background: $secondary-color;
-    color: $reverse-color !important;
-}
+.action-btns {
+    margin-bottom: 15px;
 
-.arab {
-    background: $flicker-color;
-    color: $reverse-color !important;
-    padding: 10px 14px;
+    .ti-search {
+        background: $secondary-color;
+        color: $reverse-color !important;
+    }
+
+    .arab {
+        background: $flicker-color;
+        color: $reverse-color !important;
+        padding: 10px 14px;
+    }
 }
 
 .slider-component {
@@ -74,11 +78,17 @@ body {
     display: flex;
     align-items: center;
 
-    .sliderh,
-    .sliderp {
-        align-items: center;
-        color: $reverse-color;
+    .slide-1,
+    .slide-2,
+    .slide-3 {
+        padding: 0 50px;
 
+        .sliderh,
+        .sliderp {
+            align-items: center;
+            color: $reverse-color;
+
+        }
     }
 }
 
@@ -116,8 +126,6 @@ body {
 
 
 .third-sec {
-    padding-top: 30px;
-
     .headname {
         color: $dark-color;
         position: relative;
@@ -237,7 +245,7 @@ body {
 
 .count {
     background: $twitter-color;
-    margin: 60px 0;
+    margin: 25px 0;
 
     .flex-count {
         display: flex;
@@ -469,7 +477,6 @@ body {
 
     .paragraph-social {
         color: $apple-color;
-
         margin-top: 80px;
     }
 
@@ -484,6 +491,10 @@ body {
 
     .social {
         margin: 100px 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px 0;
+        }
 
         .ti-facebook {
             background: $facebook-color;
@@ -525,27 +536,31 @@ body {
 
         .block {
             display: block;
-            width: 65px;
-            height: 65px;
-            margin-bottom: 10px;
-            font-size: 30px;
-            line-height: 65px;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 7px;
+            font-size: 20px;
+            line-height: 42px;
             color: $reverse-color;
             text-align: center;
-
         }
     }
 
-    li {
-        list-style: none;
-        padding: 5px 0;
-
-
-
-        p {
-            color: $reverse-color;
+    .social-flex {
+        @media screen and (max-width: 800px) {
+            display: flex;
+            justify-content: space-around;
         }
 
+        li {
+            list-style: none;
+            padding: 5px 0;
+            margin: 0 20px;
+            p {
+                color: $reverse-color;
+            }
+
+        }
     }
 
     .head-about-us {
@@ -706,7 +721,7 @@ footer {
     }
 
     .bottom-margin {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 }
 
@@ -751,6 +766,9 @@ footer {
     a {
         padding: 5px;
         font-family: Helvetica, sans-serif;
+        .badge{
+            margin-bottom: 8px;
+        }
     }
 }
 
@@ -1084,7 +1102,6 @@ footer {
 
 
 .section-head {
-    margin-bottom: 30px;
     @extend %flexbox;
     @extend .align-between;
     @extend .align-center-y;
@@ -1140,13 +1157,11 @@ footer {
     }
 }
 
-.carrds {
-    padding-top: 50px;
-}
 
 /******************************************Errors Page**********************************************/
 .errors {
     height: 600px;
+
     a {
         margin: 10px 5px;
     }
