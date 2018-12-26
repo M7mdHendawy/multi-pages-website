@@ -556,6 +556,7 @@ body {
             list-style: none;
             padding: 5px 0;
             margin: 0 20px;
+
             p {
                 color: $reverse-color;
             }
@@ -766,7 +767,8 @@ footer {
     a {
         padding: 5px;
         font-family: Helvetica, sans-serif;
-        .badge{
+
+        .badge {
             margin-bottom: 8px;
         }
     }
@@ -1023,11 +1025,17 @@ footer {
         padding-left: 30px;
     }
 
-    .ti-checkmark-round {
-        padding: 7px 9px;
-        border: thin solid $gray-color;
-        border-radius: 50%;
-        margin: 25px 15px;
+    .flex-between {
+        display: flex;
+
+        .ti-checkmark-round {
+            width: 31px;
+            height: 31px;
+            line-height: 31px;
+            text-align: center;
+            border: thin solid $gray-color;
+            border-radius: 50%;
+        }
     }
 
     .create {
