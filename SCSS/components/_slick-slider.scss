@@ -236,6 +236,6 @@
         &:hover { background: $reverse-color;color:$primary-color; }
         z-index: 99;
     }
-    .slick-prev{ left:0; }
-    .slick-next{ right:0; }
+    .slick-prev{ left:5px; }
+    .slick-next{ right:5px; }
 }
