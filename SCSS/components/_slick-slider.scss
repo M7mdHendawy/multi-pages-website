@@ -159,8 +159,8 @@
         @extend %position-center-y;
         z-index: 99;
     }
-    .slick-prev{ left:30px; }
-    .slick-next{ right:30px; }
+    .slick-prev{ left:0px; }
+    .slick-next{ right:0px; }
 }
 
 .slider-component,.gallery-thumbnails,.vertical-slider {
