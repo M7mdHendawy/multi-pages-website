@@ -61,7 +61,6 @@
                 border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 
                 &::before {
-                    float: $directionReverse;
                     line-height: 46px;
                     font-size: 14px;
                     -webkit-transform: rotate(0deg);
